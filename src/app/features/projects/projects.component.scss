@@ -1,0 +1,30 @@
+.repo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+
+@media (max-width: 480px) {
+  .repo-card {
+    padding: 0.8rem;
+  }
+
+  .repo-card h3 {
+    font-size: 1rem;
+  }
+
+  .repo-card .description {
+    font-size: 0.85rem;
+  }
+
+  .repo-card .github-link {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,9 @@
+<div class="repo-card">
+  <h3>{{ repo.name }}</h3>
+  <p class="description">{{ repo.description || 'Sin descripción' }}</p>
+  <div class="info">
+    <span>{{ repo.language || 'N/A' }}</span>
+    <span>⭐ {{ repo.stargazers_count }}</span>
+  </div>
+  <a class="github-link" [href]="repo.html_url" target="_blank">Ver en GitHub</a>
+</div>

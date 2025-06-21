@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+/* ─── Variables comunes ─── */
+:root {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #e60012;
+
+  --bg-card: #282828;
+  --bg-hover: #323232;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+  --accent: #e60012;
+}
+
+/* ─── Tipografía y base ─── */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+/* Enlaces globales */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* ─── Layout principal ─── */
+main {
+  display: block;
+  min-height: 100%;
+}
+
+/* Contenedor centrado */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;  /* centra horizontalmente :contentReference[oaicite:1]{index=1} */
+  padding-inline: 1rem;
+
+  @media (min-width: 600px) {
+    padding-inline: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-inline: 3rem;
+  }
+}

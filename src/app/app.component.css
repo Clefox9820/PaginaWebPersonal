@@ -1,0 +1,66 @@
+/* Estilo base */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.repo-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease both;
+  border-left: 4px solid #e60012; /* Rojo tipo Persona 5 */
+}
+
+.repo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.repo-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #e60012;
+}
+
+.repo-card p {
+  margin: 0.4rem 0;
+  color: #333;
+}
+
+.repo-card .info {
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.repo-card a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  color: #e60012;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.repo-card a:hover {
+  color: #000;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
