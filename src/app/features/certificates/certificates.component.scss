@@ -1,0 +1,33 @@
+.certs-section {
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 { font-size: 2rem; color: var(--accent); margin-bottom: 1rem; }
+
+  .certs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+
+    li {
+      background: var(--bg-card);
+      padding: 0.8rem 1rem;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 600px;
+      list-style: none;
+
+      a {
+        color: var(--text-primary);
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}

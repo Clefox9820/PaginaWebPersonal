@@ -1,0 +1,23 @@
+.skills-section {
+  padding: 3rem 0;
+  text-align: center;
+
+  h2 { font-size: 2rem; color: var(--accent); margin-bottom: 1rem; }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+
+    li {
+      background: var(--bg-hover);
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+  }
+}

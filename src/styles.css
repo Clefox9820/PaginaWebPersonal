@@ -1,6 +1,11 @@
 /* styles.scss */
 
 /* ─── Variables comunes ─── */
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-color: #121212;
   --text-color: #e0e0e0;
@@ -14,7 +19,8 @@
 }
 
 /* ─── Tipografía y base ─── */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -40,7 +46,8 @@ main {
 .container {
   width: 100%;
   max-width: 1200px;
-  margin-inline: auto;  /* centra horizontalmente :contentReference[oaicite:1]{index=1} */
+  margin-inline: auto;
+  /* centra horizontalmente :contentReference[oaicite:1]{index=1} */
   padding-inline: 1rem;
 
   @media (min-width: 600px) {
