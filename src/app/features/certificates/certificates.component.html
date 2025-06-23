@@ -1,7 +1,10 @@
 <section id="certificates" class="certs-section">
   <h2>Certificados</h2>
   <ul class="certs-grid">
-    <li><a href="#" target="_blank">Curso de Angular – Plataforma X</a></li>
-    <li><a href="#" target="_blank">Fullstack Developer – Plataforma Y</a></li>
+    <li *ngFor="let cert of certificatesList">
+      <a [href]="cert.url" target="_blank">
+        {{ cert.nombre }} – {{ cert.plataforma }}
+      </a>
+    </li>
   </ul>
 </section>
