@@ -1,36 +1,47 @@
 .contact-section {
-  padding: 3rem 0;
   text-align: center;
+  padding: 3rem 0;
 
-  h2 { font-size: 2rem; color: var(--accent); margin-bottom: 1rem; }
+  h2 {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
 
-    input, textarea {
-      width: 100%;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 6px;
-      background: var(--bg-card);
-      color: var(--text-primary);
-    }
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.6rem 1rem;
+        background: var(--bg-card);
+        border-radius: 6px;
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
-    button {
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      padding: 0.8rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: filter 0.2s ease;
+        i {
+          font-size: 1.2rem;
+          color: var(--accent);
+        }
 
-      &:hover {
-        filter: brightness(0.9);
+        &:hover {
+          background: var(--bg-hover);
+          color: var(--text-color);
+          transform: translateY(-2px);
+
+          i {
+            color: var(--text-color);
+          }
+        }
       }
     }
   }
